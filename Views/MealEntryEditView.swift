@@ -63,9 +63,16 @@ struct MealEntryEditView: View {
         Form {
             Section(header: Text("Meal Details")) {
                 TextField("Name of Meal", text: $name)
+                    .autocapitalization(.words)
+                    .disableAutocorrection(true)
                 TextField("Category", text: $category)
+                    .autocapitalization(.words)
+                    .disableAutocorrection(true)
                 TextField("Additional Info", text: $additionalInfo)
+                    .autocapitalization(.sentences)
                 TextField("Side Dishes", text: $sideDishes)
+                    .autocapitalization(.words)
+                    .disableAutocorrection(true)
             }
             Section(header: Text("Time (Minutes)")) {
                 Stepper(value: $prepTimeMinutes, in: 0...300, step: 1) {
@@ -93,13 +100,24 @@ struct MealEntryEditView: View {
         .navigationTitle(existingEntry == nil ? "Add Meal" : "Edit Meal")
         .navigationBarItems(trailing: Button("Save") { saveEntry() })
         .onAppear { loadExistingData() }
+        .alert(isPresented: $showError, content: {
+            Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+        })
     }
+
+    @State private var showError = false
+    @State private var errorMessage = ""
 
     private func loadExistingData() {
         // Values are already initialized in init for existingEntry
     }
 
     private func saveEntry() {
+        guard !name.isEmpty else {
+            errorMessage = "Meal name cannot be empty."
+            showError = true
+            return
+        }
         // Create or update MealEntry
         let entryObject = existingEntry ?? MealEntry(context: viewContext)
         entryObject.id = existingEntry?.id ?? UUID()

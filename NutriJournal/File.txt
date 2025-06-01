@@ -1,0 +1,9 @@
+import SwiftUI
+
+extension Color {
+    static let appPrimary = AppConstants.Colors.primary
+    static let appSecondary = AppConstants.Colors.secondary
+    static let appAccent = AppConstants.Colors.accent
+    static let appBackground = AppConstants.Colors.background
+    static let appCardBackground = AppConstants.Colors.cardBackground
+}

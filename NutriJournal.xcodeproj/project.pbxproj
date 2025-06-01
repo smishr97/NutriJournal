@@ -15,9 +15,11 @@
 		40A80D732DEBC26C00DB249A /* MacroCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D6C2DEBB7C100DB249A /* MacroCalculator.swift */; };
 		40A80D742DEBC27100DB249A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D692DEBB6E900DB249A /* Date+Extensions.swift */; };
 		40A80D752DEBC35D00DB249A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D582DEBB1F400DB249A /* PersistenceController.swift */; };
+		AAAAAAAA1111BBBBBB2222CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDDDDDDD3333EEEEEE4444FF /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDDDDDDD3333EEEEEE4444FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NutriJournal/Info.plist; sourceTree = "<group>"; };
 		40A80D3A2DEBAA5500DB249A /* NutriJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A80D582DEBB1F400DB249A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		40A80D5A2DEBB28B00DB249A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		40A80D672DEBB66100DB249A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DDDDDDDD3333EEEEEE4444FF /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAAAAAA1111BBBBBB2222CC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +221,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = NutriJournal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -246,7 +250,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = NutriJournal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

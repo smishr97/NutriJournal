@@ -65,6 +65,6 @@ struct DailyView: View {
 
 struct DailyView_Previews: PreviewProvider {
     static var previews: some View {
-        DailyView(date: Date()).environment(\ .managedObjectContext, PersistenceController.preview.container.viewContext)
+        DailyView(date: Date()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

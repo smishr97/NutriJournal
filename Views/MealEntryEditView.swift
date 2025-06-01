@@ -141,6 +141,6 @@ struct MealEntryEditView: View {
 struct MealEntryEditView_Previews: PreviewProvider {
     static var previews: some View {
         MealEntryEditView(date: Date(), mealType: .breakfast)
-            .environment(\ .managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

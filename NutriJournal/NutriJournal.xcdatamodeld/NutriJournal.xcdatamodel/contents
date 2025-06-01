@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class"/>
-    <entity name="MealDetail" representedClassName="MealDetail" syncable="YES" codeGenerationType="class">
+    <entity name="MealDetails" representedClassName="MealDetails" syncable="YES" codeGenerationType="class">
         <attribute name="additionalInfo" optional="YES" attributeType="String"/>
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="category" optional="YES" attributeType="String"/>
@@ -19,6 +19,6 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="mealType" optional="YES" attributeType="String"/>
-        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MealDetail" inverseName="entry" inverseEntity="MealDetail"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MealDetails" inverseName="entry" inverseEntity="MealDetails"/>
     </entity>
 </model>

@@ -26,3 +26,11 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
+
+extension PersistenceController {
+    static var preview: PersistenceController {
+        let controller = PersistenceController(inMemory: true)
+        // Add mock data here if needed for previews
+        return controller
+    }
+}

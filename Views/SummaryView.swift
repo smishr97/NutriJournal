@@ -98,6 +98,6 @@ struct SummaryView: View {
 
 struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryView().environment(\ .managedObjectContext, PersistenceController.preview.container.viewContext)
+        SummaryView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

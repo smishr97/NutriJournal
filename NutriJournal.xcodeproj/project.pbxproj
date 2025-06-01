@@ -21,10 +21,6 @@
 		40A80D3A2DEBAA5500DB249A /* NutriJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A80D582DEBB1F400DB249A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		40A80D5A2DEBB28B00DB249A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		40A80D5B2DEBB61200DB249A /* MealDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40A80D5C2DEBB61200DB249A /* MealDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40A80D5D2DEBB61200DB249A /* MealEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40A80D5E2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		40A80D682DEBB67300DB249A /* MealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealType.swift; sourceTree = "<group>"; };
 		40A80D692DEBB6E900DB249A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		40A80D6A2DEBB73600DB249A /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
@@ -97,10 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				40A80D682DEBB67300DB249A /* MealType.swift */,
-				40A80D5B2DEBB61200DB249A /* MealDetail+CoreDataClass.swift */,
-				40A80D5C2DEBB61200DB249A /* MealDetail+CoreDataProperties.swift */,
-				40A80D5D2DEBB61200DB249A /* MealEntry+CoreDataClass.swift */,
-				40A80D5E2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

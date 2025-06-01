@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40A80D5F2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D5E2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift */; };
-		40A80D602DEBB61200DB249A /* MealDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D5C2DEBB61200DB249A /* MealDetail+CoreDataProperties.swift */; };
-		40A80D612DEBB61200DB249A /* MealDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D5B2DEBB61200DB249A /* MealDetail+CoreDataClass.swift */; };
-		40A80D622DEBB61200DB249A /* MealEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D5D2DEBB61200DB249A /* MealEntry+CoreDataClass.swift */; };
 		40A80D6E2DEBBD7500DB249A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D5A2DEBB28B00DB249A /* CalendarView.swift */; };
 		40A80D6F2DEBBE3C00DB249A /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D6A2DEBB73600DB249A /* DailyView.swift */; };
 		40A80D702DEBBE4900DB249A /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A80D6D2DEBB7D000DB249A /* SummaryView.swift */; };
@@ -25,10 +21,6 @@
 		40A80D3A2DEBAA5500DB249A /* NutriJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A80D582DEBB1F400DB249A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		40A80D5A2DEBB28B00DB249A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		40A80D5B2DEBB61200DB249A /* MealDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40A80D5C2DEBB61200DB249A /* MealDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40A80D5D2DEBB61200DB249A /* MealEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40A80D5E2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		40A80D682DEBB67300DB249A /* MealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealType.swift; sourceTree = "<group>"; };
 		40A80D692DEBB6E900DB249A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		40A80D6A2DEBB73600DB249A /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
@@ -101,10 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				40A80D682DEBB67300DB249A /* MealType.swift */,
-				40A80D5B2DEBB61200DB249A /* MealDetail+CoreDataClass.swift */,
-				40A80D5C2DEBB61200DB249A /* MealDetail+CoreDataProperties.swift */,
-				40A80D5D2DEBB61200DB249A /* MealEntry+CoreDataClass.swift */,
-				40A80D5E2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,14 +197,10 @@
 				40A80D6E2DEBBD7500DB249A /* CalendarView.swift in Sources */,
 				40A80D6F2DEBBE3C00DB249A /* DailyView.swift in Sources */,
 				40A80D712DEBBE5B00DB249A /* MealEntryEditView.swift in Sources */,
-				40A80D5F2DEBB61200DB249A /* MealEntry+CoreDataProperties.swift in Sources */,
 				40A80D702DEBBE4900DB249A /* SummaryView.swift in Sources */,
-				40A80D602DEBB61200DB249A /* MealDetail+CoreDataProperties.swift in Sources */,
 				40A80D722DEBC25F00DB249A /* MealType.swift in Sources */,
 				40A80D742DEBC27100DB249A /* Date+Extensions.swift in Sources */,
 				40A80D752DEBC35D00DB249A /* PersistenceController.swift in Sources */,
-				40A80D612DEBB61200DB249A /* MealDetail+CoreDataClass.swift in Sources */,
-				40A80D622DEBB61200DB249A /* MealEntry+CoreDataClass.swift in Sources */,
 				40A80D732DEBC26C00DB249A /* MacroCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

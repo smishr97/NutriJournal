@@ -21,34 +21,39 @@ struct SummaryView: View {
     @Environment(\ .managedObjectContext) private var viewContext
 
     var body: some View {
-        VStack {
-            Picker("Range", selection: $selectedRange) {
-                ForEach(RangeType.allCases) { range in
-                    Text(range.rawValue).tag(range)
+        GeometryReader { geometry in
+            VStack {
+                Picker("Range", selection: $selectedRange) {
+                    ForEach(RangeType.allCases) { range in
+                        Text(range.rawValue).tag(range)
+                    }
                 }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+
+                DatePicker("Reference Date", selection: $referenceDate, displayedComponents: [.date])
+                    .datePickerStyle(CompactDatePickerStyle())
+                    .padding(.horizontal)
+
+                Spacer()
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Totals for \(selectedRange.rawValue) ending \(formattedDate(referenceDate))")
+                        .font(.headline)
+                    let totals = calculateTotals()
+                    Text("Calories: \(totals.calories) kcal")
+                    Text("Protein: \(totals.protein) g")
+                    Text("Fats: \(totals.fats) g")
+                    Text("Sugar: \(totals.sugar) g")
+                }
+                .padding()
+
+                Spacer()
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-
-            DatePicker("Reference Date", selection: $referenceDate, displayedComponents: [.date])
-                .datePickerStyle(CompactDatePickerStyle())
-                .padding(.horizontal)
-
-            Spacer()
-
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Totals for \(selectedRange.rawValue) ending \(formattedDate(referenceDate))")
-                    .font(.headline)
-                let totals = calculateTotals()
-                Text("Calories: \(totals.calories) kcal")
-                Text("Protein: \(totals.protein) g")
-                Text("Fats: \(totals.fats) g")
-                Text("Sugar: \(totals.sugar) g")
-            }
-            .padding()
-
-            Spacer()
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .background(Color.white)
         }
+        .edgesIgnoringSafeArea(.all) // align for full screen
         .navigationTitle("Summary")
     }
 

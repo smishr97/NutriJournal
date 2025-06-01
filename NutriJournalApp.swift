@@ -6,7 +6,7 @@ struct NutriJournalApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SummaryView() // changed home screen to summary page
                 .environment(\.managedObjectContext, dataController.container.viewContext)
                 .onAppear {
                     logAppLaunch()
